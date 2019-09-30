@@ -35,10 +35,11 @@
         // ALL YOUR CODE GOES BELOW HERE ///////////////////////////////////////
         
         // example: 
-        collectable.create(type.steve, 200, 170, 6, 0.7);
-        
-        
-        
+        collectable.create(type.steve, 650, 250, 6, 0.7);
+        collectable.create(type.steve, 750, 170, 6, 0.7);
+        collectable.create(type.steve, 850, 50, 6, 0.7);
+        collectable.create(type.steve, 550, 350, 6, 0.7);
+        collectable.create(type.steve, 450, 450, 6, 0.7);
         // ALL YOUR CODE GOES ABOVE HERE ///////////////////////////////////////
         ////////////////////////////////////////////////////////////////////////
     };
