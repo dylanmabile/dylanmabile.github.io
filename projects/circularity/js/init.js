@@ -22,6 +22,7 @@ var init = function (window) {
         // TODO 1 : Declare and initialize our variables
         var circle;
         var circles = [];
+        
         // TODO 2 : Create a function that draws a circle 
         function drawCircle() {
         circle = draw.randomCircleInArea(canvas, true, true, '#999', 2);
@@ -50,12 +51,12 @@ var init = function (window) {
             } 
 
             // TODO 5b) if the circle has gone past of the TOP side of the screen then place it on the BOTTOM
-            if ( circle.y > canvas.height) {
-                circle.y = 0;
+            if ( circle.y < 0) {
+                circle.y = canvas.height;
             }
             // TODO 5c) if the circle has gone past of the BOTTOM side of the screen then place it OFF-SCREEN TOP
-            else if ( circle.y < 0) {
-                circle.y = canvas.height;
+            else if ( circle. > canvas.height) {
+                circle.y = 0;
             }
             // YOUR TODO 5 CODE ENDS HERE //////////////////////////
         }
@@ -68,16 +69,12 @@ var init = function (window) {
            
 
             // TODO 8 : Iterate over the array
-           for (var i = 0; i < drawCircle.length; i++) {
-            physikz.updatePosition(circles);
-        }
-        
-            for (var i = 0; i < drawCircle.length; i++) {
-            game.checkCirclePosition(i);
-        }
+           for (var i = 0; i < circle.length; i++){
+               circle = circles[i];
+               physikz.updatePosition(circles[i]);
+               game.checkCirclePosition(circles[i]);
+           }
 
-        }
-        
         ////////////////////////////////////////////////////////////////////
         // NO CODE BELOW HERE                                             //
         ////////////////////////////////////////////////////////////////////
